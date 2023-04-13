@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .navegacion{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .menu > li {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu > li > a{
+    display: block;
+    padding: 35px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+  }
+  .menu li a:hover{
+    color: #8f959a;
+    transition: all .3s;
+  }
+  .submenu{
+    top: 100%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 1;
+  }
+  .submenu li a{
+    background-color: rgb(251, 251, 251);
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  }
+  .menu li:hover .submenu{
+    width: 270px;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+  }
+
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #5f838d; 
+}
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #5f838d;
+}
+.pie{
+    background-color: rgb(10, 9, 9);
+    padding-top: 80px;
+    padding-bottom: 80px;
+  
+  }
+  .grande{
+    color: red;
+    font-size: 150px;
+    text-align: center;
+  }
+  .pequeño{
+    color: red;
+    text-align: center;
+  }
+  .botoncito{
+    display: flex;
+    justify-content: center;
+  }
+  .pie2{
+    background-color: #020d32;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    padding-left: 20px;
+  }
+  .letra{
+    padding-right: 20px;
+  }
+  .letra2{
+    width: 600px;
+  }
+  .pie3{
+    background-color: #020d32;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  b{
+    font-size: 8rem;
+    position: absolute;
+    }
+    .one{
+    color: rgb(0, 0, 0);
+    text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+     1px  1px 0 black,
+    -1px  1px 0 black;
+    }
+    .one2{
+    color: #0f3ADA;
+    animation: wave 3s ease-in-out infinite; 
+    }
+    @keyframes wave{
+    0%, 100%{
+       clip-path: polygon(
+        0%  47%,
+        10%  48%,
+        33% 54%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+       );
+    }
+    50%{
+      clip-path: polygon(
+        0%  60%,
+        15%  65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+       );
+    }
+    }
+    .letre a{
+      color: rgb(255, 255, 255);
+    }
+    .letra2 a{
+      color: rgb(255, 255, 255);
+    }
+    .studii{
+      text-align: center;
+      width: 30px;
+      color: #fff;
+      font-size: 30px;
+    }
+    .textito {
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+    }
+    .icone{
+      font-size: 30px;
+      float: left;
+      padding: 6px;
+      color: #fff;
+    }
+    .icone :hover{
+      color: #5f838d;
+    
+    }
+    
+    
+    
+    /*primer boton*/
+    .btn-70,
+    .btn-70 *,
+    .btn-70 :after,
+    .btn-70 :before,
+    .btn-70:after,
+    .btn-70:before {
+    border: 0 solid;
+    box-sizing: border-box;
+    }
+    .btn-70 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(rgb(9, 9, 9), rgb(254, 252, 252));
+    padding: 0;
+    }
+    .btn-70:disabled {
+    cursor: default;
+    }
+    .btn-70:-moz-focusring {
+    outline: auto;
+    }
+    .btn-70 svg {
+    display: block;
+    vertical-align: middle;
+    }
+    .btn-70 [hidden] {
+    display: none;
+    }
+    .btn-70 {
+    box-shadow: inset 0 0 0 2px rgb(251, 251, 251);
+    box-sizing: border-box;
+    display: block;
+    font-weight: 900;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: color 0.1s linear;
+    }
+    .btn-70:after,
+    .btn-70:before {
+    content: "";
+    position: absolute;
+    }
+    .btn-70:before {
+    border-bottom: var(--border);
+    border-top: var(--border);
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    }
+    .btn-70:hover:before {
+    --border: 4px solid rgb(6, 6, 6);
+    -webkit-animation: border-top-and-bottom 1s forwards;
+    animation: border-top-and-bottom 1s forwards;
+    }
+    .btn-70:after {
+    border-left: var(--border);
+    border-right: var(--border);
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+    width: 100%;
+    z-index: -1;
+    }
+    .btn-70:hover:after {
+    --border: 4px solid rgba(8, 8, 8, 0);
+    -webkit-animation: border-right-and-left 1s forwards;
+    animation: border-right-and-left 1s forwards;
+    }
+    @-webkit-keyframes border-top-and-bottom {
+    0% {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+    }
+    @keyframes border-top-and-bottom {
+    0% {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+    }
+    @-webkit-keyframes border-right-and-left {
+    0% {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+    }
+    @keyframes border-right-and-left {
+    0% {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+    }
+    
+    .btn-70{
+        margin-left: auto;
+        margin-right: auto;
+    }

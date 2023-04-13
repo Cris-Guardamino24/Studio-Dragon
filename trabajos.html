@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Dragon</title>
+    <link rel="stylesheet" href="assets/css/trabajos.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class="imgAct" src="assets/fondo/alc.png" alt="">
+    <nav class="navegacion">
+      <div>
+          <ul class="menu">
+              <li><a href="principal.html" >Studio Dragon</a></li>
+          </ul>
+      </div>
+      <div>
+          <ul class="menu">
+              <li><a href="#" >Works</a>
+                  <ul class="submenu">
+                      <li><a href="">Show</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      <div>
+          <ul class="menu">
+              <li><a href="#" >Information</a>
+                  <ul class="submenu">
+                      <li><a href="informacion.html">About Us</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <div class="menuBajo">
+        <div class="container">
+            <button class="btn2" id="btnR" onclick="btnDrama()">Drama/Romanse</button>
+        </div>
+        <div class="container">
+            <button class="btn2" id="btnTA" onclick="btnTerror()">Terror/Accion</button>
+        </div>
+        <div class="container">
+            <button class="btn2" id="btnD" onclick="btnCome()">Comedia</button>
+        </div>
+        <div class="container">
+            <button class="btn2" id="btnF" onclick="btnFanta()">Fantasia</button>
+        </div>
+        <div class="container">
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" id="buscador" class="buscador">
+            </div>
+            <div class="btnn">
+                <i class="fi fi-br-search"></i>
+            </div>
+        </div>
+</div>
+<div class="galeria1" id="galeria1">
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen1.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" id="boton1" onclick="botoncito1()">
+                <h2>Alchemy of Souls</h2>
+                <p><strong>Director:</strong>Park Joon Hwa</p>
+                <p><strong>Guionistas:</strong>Hong Jung Eun and Hong Mi Ran</p>
+                <p>Lee Jae Wook como Jang Wook</p>
+                <p>Jung So Min como Mu Deok Yi</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen2.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito2()">
+                <h2>Extraordinary Attorney Woo</h2>
+                <p> <strong>Director:</strong> Yoo In Sik (유인식)</p>
+                <p><strong>Guionista:</strong>  Moon Ji Won (문지원)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Park Eun-bin. Woo Young-woo.</p>
+                <p>-Kang Tae-oh. Lee Jun-ho.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen3.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito3()">
+                <h2>A Business Proposal</h2>
+                <p> <strong>Director:</strong>  Park Seon Ho</p>
+                <p><strong>Guionista:</strong>  Han Sul Hee (한설희), Hong Bo Hee (홍보희)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Kim Se Jeong como Shin Ha Ri.</p>
+                <p>-Ahn Hyo Seob como Kang Tae Mu.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen4.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito4()">
+                <h2>All of Us Are Dead</h2>
+                <p> <strong>Director:</strong>Lee Jae Kyu</p>
+                <p><strong>Guionista:</strong>Chun Sung Il</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Park Ji Hoo como Nam On Jo.</p>
+                <p>-Yoon Chan Young como Lee Chung San.</p>
+                <p>-Cho Yi Hyun como Choi Nam Ra.</p>
+                <p>-Park Solomon como Lee Soo Hyuk.</p>
+                <p>-Im Jae Hyuk como Yang Dae Soo.</p>
+                <p>-Ahn Seung Kyun como Oh Joon Young.</p>
+                <p>-Ham Sung Min como Han Kyung Soo.</p>
+                <p>-Lee Yoo Mi como Lee Na Yeon.</p>
+                <p>-Kim Ju A como Yoon Yi Sak.</p>
+                <p>-Kim Bo Yoon como Seo Hyo Ryung.</p>
+                <p>-Kim Jin Young como Kim Ji Min.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen5.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito5()">
+                <h2>Squid Game</h2>
+                <p> <strong>Director:</strong>Hwang Dong Hyuk</p>
+                <p><strong>Guionista:</strong>Hwang Dong Hyuk</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Lee Jung Jae como Ki Hoon/No.456.</p>
+                <p>-Park Hae Soo como Sang Woo/No.218.</p>
+                <p>-Jung Ho Yeon como Sae Byeok/No.067.</p>
+                <p>-Heo Sung Tae como Deok Soo/No.101.</p>
+                <p>-Wi Ha Joon como el detective Hwang Joon Ho.</p>
+                <p>-Kim Joo Ryung como Mi Ryeong/No.212.</p>
+                <p>-Oh Young Soo como Oh Il Nam/No.001.</p>
+                <p>-Tripathi Anupam como Abdul Ali/No.199.</p>
+                <p>-Lee Byung Hun como "El líder".</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen6.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito6()">
+                <h2>Vincenzo</h2>
+                <p> <strong>Director:</strong>Kim Hee Won (김희원)</p>
+                <p><strong>Guionista:</strong>Park Jae Bum</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Song Joong Ki como Vincenzo Cassano / Park Joo Hyung.</p>
+                <p>-Jun Yeo Bin como Hong Cha Young.</p>
+                <p>-Taecyeon como Jang Jun Woo.</p>
+                <p>-Kim Yeo Jin como Choi Myung Hee.</p>
+                <p>-Kwak Dong Yeon como Jang Han Seo.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen7.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito7()">
+                <h2>True Beauty</h2>
+                <p> <strong>Director:</strong>Kim Sang Hyub</p>
+                <p><strong>Guionista:</strong>Lee Si Eun (이시은), Kim Na Young (김나영)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Moon Ga Young como Im Joo Kyung.</p>
+                <p>-Cha Eun Woo como Lee Su Ho.</p>
+                <p>-Hwang In Yeob como Han Seo Jun.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen8jpg.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito8()">
+                <h2>Emergency landing in your heart</h2>
+                <p> <strong>Director:</strong>Lee Jung Hyo</p>
+                <p><strong>Guionista:</strong>Park Ji Eun</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Hyun Bin como Ri Jung Hyuk.</p>
+                <p>-Son Ye Jin como Yoon Se Ri.</p>
+                <p>-Seo Ji Hye como Seo Dan.</p>
+                <p>-Kim Jung Hyun como Koo Seung Joon.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen9.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito9()">
+                <h2> It's Okay to Not Be Okay</h2>
+                <p> <strong>Director:</strong>Park Sin Woo</p>
+                <p><strong>Guionista:</strong> Jo Yong</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Kim Soo Hyun como Moon Kang Tae.</p>
+                <p>-Seo Ye Ji como Ko Moon Young.</p>
+                <p>-Seo Ji Hye como Seo Dan.</p>
+                <p>-Kim Jung Hyun como Koo Seung Joon.</p>
+            </button>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<div class="galeria2" id="galeria2">
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen10.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito10()">
+                <h2>Goblin</h2>
+                <p> <strong>Director:</strong>Lee Eung Bok</p>
+                <p><strong>Guionista:</strong>Kim Eun Sook</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Gong Yoo como Kim Shin (Dokkaebi, 939 años aprox.).</p>
+                <p>-Lee Dong Wook como Kim Woo Bin (Ángel de la muerte, 300 años aprox.).</p>
+                <p>-Kim Go Eun como Ji Eun Tak (Novia del ser Inmortal, 19).</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen11.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito11()">
+                <h2>Strong Woman Do Bong Soon</h2>
+                <p> <strong>Director:</strong>Park Sin Woo</p>
+                <p><strong>Guionista:</strong> Jo Yong</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Kim Soo Hyun como Moon Kang Tae.</p>
+                <p>-Seo Ye Ji como Ko Moon Young.</p>
+                <p>-Seo Ji Hye como Seo Dan.</p>
+                <p>-Kim Jung Hyun como Koo Seung Joon.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen12.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito12()">
+                <h2>Hi bye mama!</h2>
+                <p> <strong>Director:</strong>Kim Sang Hyub</p>
+                <p><strong>Guionista:</strong>Yoo Yoon Kyung (유윤경)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Song Yoon Ah como Han Seung Hee.</p>
+                <p>-Jung Joon Ho como Moon Tae Joo.</p>
+                <p>-Moon Jung Hee como Seo Ji Eun.</p>
+                <p>-Hong Jong Hyun como Koo Ji Sub.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen13.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text" onclick="botoncito13()">
+                <h2>Love Alarm</h2>
+                <p> <strong>Director:</strong>Lee Na Jung (이나정)</p>
+                <p><strong>Guionista:</strong>Lee Ah Yeon (이아연), Seo Bo Ra (서보라)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Kim So Hyun como Kim Jo Jo.</p>
+                <p>-Song Kang como Hwang Sun Oh.</p>
+                <p>-Jung Ga Ram como Lee Hye Young.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen14.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Boys Over Flowers</h2>
+                <p> <strong>Director:</strong>Jun Ki Sang</p>
+                <p><strong>Guionista:</strong>Yoon Yi Ryun</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Goo Hye Sun como Geum Jan Di.</p>
+                <p>-Lee Min Ho como Gu Jun Pyo.</p>
+                <p>-Kim Hyun Joong como Yoon Ji Hoo.</p>
+                <p>-Kim Bum como So Yi Jeong.</p>
+                <p>-Kim Joon como Song Woo Bin.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen15.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Strangers from Hell</h2>
+                <p> <strong>Director:</strong>Lee Chang Hee</p>
+                <p><strong>Guionista:</strong>Jung Yi Do</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Im Si Wan como Yoon Jong Woo (303).</p>
+                <p>-Lee Dong Wook como Seo Moon Jo (304).</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen16.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Extracurricular</h2>
+                <p> <strong>Director:</strong>Kim Jin Min</p>
+                <p><strong>Guionista:</strong>Jin Han Se</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Kim Dong Hee como Ji Soo.</p>
+                <p>-Jung Da Bin como Min Hee.</p>
+                <p>-Park Joo Hyun como Gyu Ri.</p>
+                <p>-Nam Yoon Soo como Gi Tae.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen17.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Tomorrow</h2>
+                <p> <strong>Director:</strong> Kim Tae Yoon (김태윤), Sung Chi Wook</p>
+                <p><strong>Guionista:</strong>Kim Yoo Jin (김유진)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Kim Hee Sun como Gu Ryeon.</p>
+                <p>-Ro Woon como Choi Joon Woong.</p>
+                <p>-Lee Soo Hyuk como Park Joong Gil.</p>
+                <p>-Yoon Ji On como Im Ryong Koo.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen18.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Juvenile Justice</h2>
+                <p> <strong>Director:</strong>Hong Jong Chan (홍종찬)</p>
+                <p><strong>Guionista:</strong>Kim Min Seok (김민석)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Kim Hye Soo como Sim Eun Seok.</p>
+                <p>-Kim Moo Yul como Cha Tae Joo.</p>
+                <p>-Lee Sung Min como Kang Won Joong.</p>
+                <p>-Lee Jung Eun como Na Geun Hee.</p>
+            </button>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<div class="galeria3" id="galeria3">
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen19.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Twenty-Five, Twenty-One</h2>
+                <p> <strong>Director:</strong>Jung Ji Hyun</p>
+                <p><strong>Guionista:</strong>Kwon Do Eun (권도은)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Kim Tae Ri como Na Hee Do.</p>
+                <p>-Nam Joo Hyuk como Baek Yi Jin.</p>
+                <p>-Bona como Go Yoo Rim.</p>
+                <p>-Choi Hyun Wook como Moon Ji Woong.</p>
+                <p>-Lee Joo Myung como Ji Seung Wan.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen20.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>The Sound of Magic</h2>
+                <p> <strong>Director:</strong>Kim Sung Yoon (김성윤)</p>
+                <p><strong>Guionista:</strong>Kim Min Jung (김민정)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Ji Chang Wook como Lee Eul.</p>
+                <p>-Choi Sung Eun como Yoon Ah Yi.</p>
+                <p>-Hwang In Yeob como Na Il Deung.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen21jpg.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>My Name</h2>
+                <p> <strong>Director:</strong>Kim Jin Min</p>
+                <p><strong>Guionista:</strong>Kim Ba Da (김바다)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Han So Hee como Yoon Ji Woo.</p>
+                <p>-Park Hee Soon como Choi Moo Jin.</p>
+                <p>-Ahn Bo Hyun como Jun Pil Do.</p>
+                <p>-Kim Sang Ho como Cha Ki Ho.</p>
+                <p>-Lee Hak Joo como Jung Tae Joo.</p>
+                <p>-Jang Ryul como Do Kang Jae.</p>
+                <p>-Im Ki Hong como Mango.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen22.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Itaewon Class</h2>
+                <p> <strong>Director:</strong>Kim Sung Yoon (김성윤)</p>
+                <p><strong>Guionista:</strong>Kwang Jin (광진)</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Park Seo Joon como Park Sae Ro Yi.</p>
+                <p>-Kim Da Mi como Jo Yi Seo.</p>
+                <p>-Yoo Jae Myung como Jang Dae Hee.</p>
+                <p>-Kwon Na Ra como Oh Soo Ah.</p>
+                <p>-Kim Dong Hee como Jang Geun Soo.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen23.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>The Legend of the Blue Sea</h2>
+                <p> <strong>Director:</strong>Jin Hyuk</p>
+                <p><strong>Guionista:</strong>Park Ji Eun</p>
+                <p><strong>Reparto principal:</strong></p>
+                <p>-Jun Ji Hyun como Sim Chung / Sae Wa (Sirena).</p>
+                <p>-Park Jin Young como Heo Joon Jae / Dam Ryung (Joven).</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen24.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Descendants of the sun</h2>
+                <p><strong>Director:</strong>Lee Eung Bok, Yoo Jong Sun and Beak Sang Hoon.</p>
+                <p><strong>Productor:</strong>Lee Eung Bok</p>
+                <p><strong>Reparto Principal:</strong></p>
+                <p>Song Joong Ki como Capitan Yoo Shi Jin.</p>
+                <p>Song Hye Kyo como Doctora Kang Mo Yeon.</p>
+                <p>Jin Goo como Sargento Mayor Seo Dae Yung.</p>
+                <p>Kim Ji Won como Teniente Primera Cirujana Yoon Myung Joo.</p>
+                <p>Kang Shin Il como Comandante Yoon (Padre de Myung Joo).</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen25.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Pinocchio</h2>
+                <p><strong>Director:</strong>Jo Soo Won.</p>
+                <p><strong>Guionista:</strong>Park Hye Ryun.</p>
+                <p><strong>Reparto Principal:</strong></p>
+                <p>Lee Jong Suk como Choi Dal Po / Gi Ha Myung.</p>
+                <p>Park Shin Hye como Choi In Ha.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen26.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>My Love From the Star</h2>
+                <p><strong>Director:</strong>Jang Tae Yoo and Oh Choong Hwan.</p>
+                <p><strong>Guionista:</strong>Park Ji Eun.</p>
+                <p><strong>Reparto Principal:</strong></p>
+                <p>Jun Ji Hyun como Cheon Song Yi.</p>
+                <p>Kim Soo Hyun como Do Min Joon.</p>
+                <p>Park Hae Jin como Lee Hwi Kyung</p>
+                <p>Yoo In Na como Yoo Se Mi</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen27.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Secret Garden</h2>
+                <p><strong>Director:</strong>Shin Woo Chul and Kwon Hyuk Chan.</p>
+                <p><strong>Guionista:</strong>Kim Eun Sook.</p>
+                <p><strong>Reparto Principal:</strong></p>
+                <p>Hyun Bin como Kim Joo Won.</p>
+                <p>Ha Ji Won como Gil Ra Im.</p>
+            </button>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<div class="galeria4" id="galeria4">
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen28.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>The 1st Shop of Coffee Prince</h2>
+                <p><strong>Director:</strong>Lee Yoon Jung.</p>
+                <p><strong>Guionista:</strong>Lee Jung Ah, Jang Hyun Joo.</p>
+                <p><strong>Reparto Principal:</strong></p>
+                <p>Yoon Eun Hye es Go Eun Chan.</p>
+                <p>Gong Yoo es Choi Han Kyul.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen29.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen30.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>My Mister</h2>
+                <p><strong>Director:</strong>Kim Won Suk.</p>
+                <p><strong>Guionista:</strong>Park Hae Young.</p>
+                <p><strong>Reparto Principal:</strong></p>
+                <p>Lee Sun Gyun como Park Dong Hoon.</p>
+                <p>IU como Lee Ji Ahn.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen31.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>A Love So Beautiful</h2>
+                <p><strong>Director:</strong>Seo Min Jung (서민정).</p>
+                <p><strong>Guionista:</strong>Choi Yoo Jung (최유정) and Jang Yoo Yeon (장유연).</p>
+                <p><strong>Reparto Principal:</strong></p>
+                <p>Kim Yo Han como Cha Heon.</p>
+                <p>So Joo Yeon como Shin Sol Yi.</p>
+                <p>Yeo Hoe Hyun como Woo Dae Sung.</p>
+                <p>Jo Hye Joo como Kang Ha Young.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen32.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic">
+            <button class="text">
+                <h2>Nightmare Teacher</h2>
+                <p><strong>Director:</strong>Hyeon Moon Seob (현문섭).</p>
+                <p><strong>Guionista:</strong>Hyeon Moon Seob (현문섭) and Jeong Yoo Seok (정유석).</p>
+                <p><strong>Reparto Principal:</strong></p>
+                <p>Kim So Hyun como Kang Ye Rim.</p>
+                <p>Lee Min Hyuk como Seo Sang Woo.</p>
+                <p>Uhm Ki Joon como Han Bong Goo.</p>
+                <p>Seo Shin Ae como Kim Seul Gi.</p>
+            </button>
+        </div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen33.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen34.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen35.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen36.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+</div>
+<br><br><br>
+<div class="galeria5" id="galeria5">
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen37.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen38.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen39.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt">
+        <img class="imagen" src="./assets/imagenes/imagen40.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen41.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen42.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen43.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen44.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen45.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+</div>
+<br><br><br>
+<div class="galeria6" id="galeria6">
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen46.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen47.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen48.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen49.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen50.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen51.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen52.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen53.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen54.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+</div>
+<br><br><br>
+<div class="galeria7" id="galeria7">
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen55.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen56.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen57.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen58.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen59.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen60.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen61.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen62.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+    <div class="imgt" style="position: relative;">
+        <img class="imagen" src="./assets/imagenes/imagen63.jpg" alt="" style="width: 270px; height: 400px;">
+        <div class="descripChic"></div>
+    </div>
+</div>
+<div class="boton">
+    <button class="btn-69" id="btnMas" >See more</button>
+</div>
+<br><br>
+
+<br><br>
+<div class="pie2" id="pie2">
+    <div class="letra"><a href="contactanos.html">Contact us</a></div>
+    <div class="letra2"><a href="informacion.html">More of us</a></div>
+   </div>
+     <hr>
+     <div class="pie3" id="pie3">
+         <div class="letra">
+             <p class="studii">Studio Dragon</p>
+         </div>
+         <div class="letra2">
+             <p class="textito">Studio dragon, corporation made by young people from +Chicas Tec del Cetpro 
+                 Carabayllo, so you can enjoy Korean movies and series.</p>
+         </div>
+         <div class="icons">
+            <a class="icone" href="https://www.facebook.com/studiodragon.official/"><i class="fi fi-brands-facebook"></i></a>
+            <a class="icone" href="https://www.instagram.com/studiodragon.official/"><i class="fi fi-brands-instagram"></i></a>
+         </div>
+     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"></script>
+<script src="assets/js/trabajos.js"></script>
+
+</body>
+</html>
